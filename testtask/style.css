@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Navigation*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/Frame.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    z-index: 999;
+}
+
+.hamburger{
+    display: flex;
+    
+}
+
+nav .navigation{
+display: flex;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.flag{
+    width: 3vw;
+    position: relative;
+    height: 3vh;
+}
+
+/*Home Section*/
+#home{
+    position: absolute;
+    top: 47%;
+    text-align: center;
+}
+.txt{
+color: #fff;
+margin: auto;
+justify-content: center;
+align-items: center;
+
+}
+.txt h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.txt .parah{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    padding-top: 35px;
+}
+
+
+/*About Section*/
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+#about-container .about-img{
+    width: 50%;
+    padding-right: 60px;
+}
+
+#about-container .about-img img{
+    width: 100%;
+}
+
+#about-container .about-text{
+    width: 60%;
+}
+
+#about-container .about-text h2{
+    color: black;
+    padding-bottom: 15px;
+    font-size: 60px;
+    font-weight: 700;
+}
+#about-container .about-text .para{
+    padding-left: 15px;
+}
+#about-container .about-text .para p{
+    color: #686F7A;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+
+/*Experties Section*/
+#experties{
+    display: flex;
+    align-items: center;
+    padding: 5vw 8vw 2vw 8vw;
+}
+
+#experties  .experties-text{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+}
+#experties  .experties-text h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+#experties  .experties-text p{
+    color: #686F7A;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*Slider*/
+#slider{
+    background: url(img/pic.png);
+    background-size: cover;
+    background-position: center;
+   background-color: #064e7a;
+    opacity: 8;
+    z-index: -1;
+}
+#formList{
+    width: 1980px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 100px auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+.list{
+    display: flex;
+    width: max-content;
+}
+.directions{
+    text-align: center;
+}
+.directions button{
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #ffffff44;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+.directions button:hover{
+    background-color: #ffffff;
+}
+.item{
+    scroll-snap-align: start;
+}
+.mid{
+    height: 70vh;
+    background-size: cover;
+}
+.mid:hover{
+    height: 80vh;
+    transition: 1s ease-in-out;
+}
+.imge{
+    height: 60vh;
+}
+.imge:hover{
+    height: 70vh;
+    transition: 1s ease-in-out;
+}
+.taxt{
+   
+    color: #fff;
+}
+
